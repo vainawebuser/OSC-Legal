@@ -1,0 +1,45 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	margin-top:15%;
+	background: url(assets/OSC_Legal-Desktop-Grafismo.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+	/*background-size: 100% 40%;*/
+}
+main {
+	position: relative;
+	/*left: 8%;*/
+	width: 100%;
+	height: 100%;
+}
+section {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	padding-top: 15%;
+	/*margin-left: 11%;*/
+	height: 85%;
+}
+section div p{
+	width: 41%;
+}
+.menu {
+	width: 8%;
+	padding-top:0px;
+	margin-left: 8%;
+}
+div{
+	margin-left: 11%;
+}
+#logo {
+	width: 100%;
+}
+nav ul {
+	
+}
+nav ul li{
+	display: block;
+}
