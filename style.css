@@ -16,6 +16,7 @@ body{
 	background: url(assets/OSC_Legal-Desktop-Grafismo.svg);
 	background-repeat: no-repeat;
 	background-position: right top;
+	font-family: sans-serif;
 }
 
 header {
@@ -29,7 +30,7 @@ header {
 
 header .logo {
 	width: 100%;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 nav ul {
@@ -41,7 +42,7 @@ nav ul li{
 }
 
 nav ul li a {
-	font-family: "ProximaNova-Medium";
+	font-family: "ProximaNova-Medium", sans-serif;
 	font-size: 1.13em;
 	color: rgb(218, 47, 40);
 	font-style: normal;
@@ -72,8 +73,20 @@ section {
 	padding-left: 25%;
 }
 
-section p{
-	width: 41%;
+section h1 {
+	margin: 0;
+}
+
+section p {
+	width: 60%;
+	font-family: "ProximaNova-Medium", sans-serif;
+	font-size: 1.25em;
+	color: rgb(0, 0, 0)
+	font-style: normal;
+	text-align: left;
+	line-height: 1.34em;
+	letter-spacing: 0em;
+	margin: .5em 0;
 }
 
 section .logo {
@@ -149,4 +162,20 @@ h1 {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	text-align: right;
+}
+
+#contato h2 {
+	font-family: "ProximaNova-Black", sans-serif;
+	font-size: 2em;
+}
+
+#contato p,
+#contato ul li {
+	font-family: "ProximaNova-Medium", sans-serif;
+	font-size: 2em;
+	color: rgb(218, 47, 40);
+	font-style: normal;
+	line-height: 1.2em;
+	letter-spacing: 0em;
 }
