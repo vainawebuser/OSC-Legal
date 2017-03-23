@@ -69,8 +69,8 @@ section {
 	align-items: flex-start;
 	min-height: 100vh;
 	width: 100%;
-	padding-top: 10%;
-	padding-left: 25%;
+	padding-top: 25%;
+	padding-left: 10%;
 }
 
 section h1 {
@@ -78,7 +78,7 @@ section h1 {
 }
 
 section p {
-	width: 60%;
+	max-width: 60ch;
 	font-family: "ProximaNova-Medium", sans-serif;
 	font-size: 1.25em;
 	color: rgb(0, 0, 0)
@@ -95,7 +95,7 @@ section .logo {
 }
 
 h1 {
-	font-family: "ProximaNova-Black";
+	font-family: "ProximaNova-Black", sans-serif;
 	font-size: 2.5em;
 	font-style: normal;
 	text-align: left;
@@ -131,6 +131,7 @@ h1 {
 
 #links .links-content p {
 	margin-top: -2%;
+	width: 40ch;
 }
 
 #servicos ol {
@@ -163,11 +164,6 @@ h1 {
 	padding: 0;
 	margin: 0;
 	text-align: right;
-}
-
-#contato h2 {
-	font-family: "ProximaNova-Black", sans-serif;
-	font-size: 2em;
 }
 
 #contato p,
