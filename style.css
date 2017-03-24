@@ -1,6 +1,5 @@
 html, body {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -19,8 +18,9 @@ body{
 }
 
 header {
-	width: 8%;
-	padding-top:0px;
+	display: flex;
+	flex-direction: column;
+	max-width: 8%;
 	position: fixed;
 	left: 8%;
 	top: 15%;
@@ -29,7 +29,8 @@ header {
 
 header .logo {
 	width: 100%;
-	margin-bottom: 30px;
+	min-width: 100px;
+	margin-bottom: 20px;
 }
 
 nav ul {
@@ -41,7 +42,7 @@ nav ul li{
 }
 
 nav ul li a {
-	font-family: "ProximaNova-Medium";
+	font-family: "ProximaNova-Medium", sans-serif;
 	font-size: 1.13em;
 	color: rgb(218, 47, 40);
 	font-style: normal;
@@ -67,13 +68,24 @@ section {
 	flex-direction: column;
 	align-items: flex-start;
 	min-height: 100vh;
-	width: 100%;
-	padding-top: 10%;
-	padding-left: 25%;
+	padding-top: 15%;
+	padding-left: 5%;
+	margin: 0 auto;
+	width: 60%;
 }
 
-section p{
-	width: 41%;
+section h1 {
+	margin: 0;
+}
+
+section p {
+	font-size: 1.25em;
+	color: rgb(0, 0, 0)
+	font-style: normal;
+	text-align: left;
+	line-height: 1.34em;
+	letter-spacing: 0em;
+	margin: .5em 0;
 }
 
 section .logo {
@@ -82,7 +94,7 @@ section .logo {
 }
 
 h1 {
-	font-family: "ProximaNova-Black";
+	font-family: "ProximaNova-Black", sans-serif;
 	font-size: 2.5em;
 	font-style: normal;
 	text-align: left;
@@ -149,4 +161,70 @@ h1 {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	text-align: right;
+}
+
+#contato p,
+#contato ul li {
+	font-family: "ProximaNova-Medium", sans-serif;
+	font-size: 2em;
+	color: rgb(218, 47, 40);
+	font-style: normal;
+	line-height: 1.2em;
+	letter-spacing: 0em;
+}
+
+@media (max-width: 960px) {
+	body {
+	  min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+  	display: flex;
+  	flex-direction: column;
+  	width: 100%;
+  	margin: 0;
+  }
+
+  main section {
+  	width: 70%;
+  	margin: 0;
+  	padding: 0;
+  	margin-top: 5%;
+  }
+
+  main section h1 {
+  	margin-top: 70%;
+  }
+
+	header {
+		position: absolute;
+    top: 2%;
+    left: 15%;
+    max-width: 70%;
+	}
+
+	header img {
+		max-width: 150px;
+	}
+
+	nav {
+		visibility: hidden;
+	}
+
+	#links div {
+		display: flex;
+		flex-direction: column;
+	} 
+
+	#links .links-content{
+		margin: 0;
+	}
+
 }
