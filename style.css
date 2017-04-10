@@ -44,7 +44,7 @@ nav ul li{
 nav ul li a {
 	font-family: "proxima-nova", "courier", arial;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 600; /*medium*/
 	font-size: 1.13em;
 	color: rgb(218, 47, 40);
 	text-align: left;
@@ -54,31 +54,36 @@ nav ul li a {
 	text-transform: uppercase;
 }
 
+nav ul li a:hover /*> .drop*/ {
+	/*display:block;*/
+	color: #000;
+	font-weight: 900; /*black*/
+}
+
 .drop {
-	position: static;
-	display:none;
+	/*display:none;*/
 	margin-left: 15px;
 }
 
-.drop a {
-	font-family: "proxima-nova", sans-serif;
+.drop li a {
+	font-family: "proxima-nova-condensed", /*"courier",*/ sans-serif;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 600; /*medium*/
 	font-size: 1.13em;
 	color: #000;
 	text-align: left;
 	line-height: 1.07em;
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
-
 }
 
-nav ul li:hover > .drop {
-	display:block;
+.drop li a:hover {
+	font-weight: 900; /*black*/	
 }
+
 
 main {
-	display: flex;
+	/*display: flex;*/
 	justify-content: flex-start;
 	align-items: center;
 	flex-direction: column;
@@ -106,7 +111,7 @@ section h1 {
 section p {
 	font-family: "proxima-nova", sans-serif;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 500; /*medium*/
 	font-size: 1.25em;
 	color: #000;
 	text-align: left;
@@ -118,40 +123,29 @@ section p {
 h1 {
 	font-family: "proxima-nova", sans-serif;
 	font-style: normal;
-	font-weight: 900;
+	font-weight: 900; /*black*/
 	font-size: 2.5em;
 	text-align: left;
 	line-height: 1.88em;
 	letter-spacing: 0.05em;
 }
 
-
-/*.serv-menu{
-	font-family: ProximaNovaExCn-Black,  ProximaNovaExCn-Semibold;
-	font-size: 1.13em;
-	color: #000;
-	font-style: normal;
-	text-align: left;
-	line-height: 1.07em;
-	letter-spacing: 0.05em;
-}*/
-
-#servicos ol {
+#servicos .lista {
 	padding: 0;
 	margin: 0;
 	counter-reset: awesome-counter;
 }
 
-#servicos ol li {
+#servicos .lista li {
 	font-family: "proxima-nova", sans-serif;
 	font-style: normal;
-	font-weight: 600;	
+	font-weight: 600; /*medium*/
 	margin-bottom: .5em;
 	overflow: hidden;
 
 }
 
-#servicos ol li:before {
+#servicos .lista li:before {
 	content: counter(awesome-counter);
 	counter-increment: awesome-counter;
 	font-family: "proxima-nova", sans-serif;
@@ -163,10 +157,43 @@ h1 {
 	color: rgb(218, 47, 40);
 }
 
+#servicos .parg-blk{
+	/*font-family: "proxima-nova", sans-serif;
+	font-style: normal;*/
+	font-weight: 900; /*black*/
+}
+
+#servicos a{
+	color:#000;
+}
+
+#servicos a p{
+	margin-top: -2px;		
+}
+
+#servicos ol {
+	padding-left: 0;
+}
+
+#servicos ol li {
+	font-family: "proxima-nova", sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	color: rgb(218, 47, 40);
+	font-size: 1.2em;
+	list-style-type: none;
+}
+
+
+#servicos ol li a {
+	color: rgb(218, 47, 40);
+	font-weight: 800;
+}
+
 #contato ul {
 	padding: 0;
 	margin: 0;
-} 
+}
 
 #links div {
 	display: flex;
@@ -175,6 +202,19 @@ h1 {
 	margin: 2% 0;
 	min-height: 40%;
 }
+
+#links a{
+	font-family: "proxima-nova", sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 1.5em;
+	color: #000;
+	text-decoration: none;
+	text-align: left;
+	line-height: 1.34em;
+	letter-spacing: 0em;
+}
+
 #links .img-links {
 	width: 30%;
 	display: flex;
@@ -279,50 +319,53 @@ h1 {
 	line-height: 1.2em;
 	letter-spacing: 0em;
 }
-
-@media (max-width: 960px) {
+@media (max-width: 1000px){
 	body {
-		min-width: 100%;
-		min-height: 100%;
-		width: auto;
-		height: auto;
 		background-size: cover;
-		display: flex;
-		flex-direction: column;
 	}
-
-	main {
-		/*display: flex;
-		flex-direction: column;*/
-		/*width: 100%;*/
-		/*margin: 0;*/
+	section {
+		margin-top:10%;
 	}
+}
 
-	main section {
-		width: 70%;
-		margin: 0;
-		padding: 0;
-		margin-top: 5%;
+@media (max-width: 900px) {
+	body {
+		background: none;
+		background: url(assets/OSC_Legal-Mobile-Grafismos-Topo.svg) no-repeat right top,
+		 url(assets/OSC_Legal-Mobile-Grafismos-Footer.svg) no-repeat right bottom;
 	}
-
-	main section h1 {
-		margin-top: 70%;
-	}
-
 	header {
-		position: absolute;
-		top: 2%;
-		left: 15%;
-		max-width: 70%;
+		position: static;
+		top: 0%;
+		left: 0%;
+		width: 100%;
+		align-items: flex-start;
+		flex-direction: row;
 	}
 
-	header img {
-		max-width: 150px;
+	header .logo {
+		width: 100%;
 	}
 
 	nav {
-		visibility: hidden;
+		display: none;
 	}
+
+	main section {
+		width: 90%;
+		min-height: auto;
+		margin: 0;
+		padding: 0;
+		margin-top: 10%;
+	}
+	main section:first-child{
+		margin-top: 40%;
+	}
+
+	/*main section h1 {
+		margin-top: 70%;
+	}*/
+
 
 	#links div {
 		display: flex;
