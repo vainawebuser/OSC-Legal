@@ -44,7 +44,7 @@ nav ul li{
 nav ul li a {
 	font-family: "proxima-nova", sans-serif;
 	font-style: normal;
-	font-weight: 600; /*medium*/
+	font-weight: 500; /*medium*/
 	font-size: 1.13em;
 	color: rgb(218, 47, 40);
 	text-align: left;
@@ -68,7 +68,7 @@ nav .drop {
 nav .drop li a {
 	font-family: "proxima-nova-extra-condensed", sans-serif;
 	font-style: normal;
-	font-weight: 600; /*medium*/
+	font-weight: 500; /*semibold*/
 	font-size: 1.13em;
 	color: #000;
 	text-align: left;
@@ -108,6 +108,18 @@ section {
 
 section h1 {
 	margin: 0;
+	padding-bottom: 3%;
+}
+
+h1 {
+	font-family: "proxima-nova", sans-serif;
+	font-style: normal;
+	font-weight: 900; /*black*/
+	font-size: 2.5em;
+	color: #000;
+	text-align: left;
+	line-height: 1.2em;
+	letter-spacing: 0.05em;
 }
 
 section p {
@@ -119,17 +131,8 @@ section p {
 	text-align: left;
 	line-height: 1.34em;
 	letter-spacing: 0em;
-	margin: .5em 0;
-}
+	margin: 0.5em 0;
 
-h1 {
-	font-family: "proxima-nova", sans-serif;
-	font-style: normal;
-	font-weight: 900; /*black*/
-	font-size: 2.5em;
-	text-align: left;
-	line-height: 1.88em;
-	letter-spacing: 0.05em;
 }
 
 #servicos .lista {
@@ -138,25 +141,29 @@ h1 {
 	counter-reset: awesome-counter;
 }
 
-#servicos .lista li {
-	font-family: "proxima-nova", sans-serif;
-	font-style: normal;
-	font-weight: 600; /*medium*/
-	margin-bottom: .5em;
-	overflow: hidden;
-
-}
-
 #servicos .lista li:before {
 	content: counter(awesome-counter);
 	counter-increment: awesome-counter;
 	font-family: "proxima-nova", sans-serif;
 	font-style: normal;
-	font-weight: 900;
-	font-size: 2.5em;
-	margin-right: .5em;
-	display: inline-block;
+	font-weight: 900; /*black*/
+	font-size: 3.13em;
 	color: rgb(218, 47, 40);
+	margin-right: 0.5em;
+	display: inline-block;
+	
+}
+
+#servicos .lista li {
+	font-family: "proxima-nova", sans-serif;
+	font-style: normal;
+	font-weight: 500; /*medium*/
+	font-size: 1.25em;
+	color: #000;
+	text-align: left;
+	line-height: 2.68em;
+	margin-bottom: 0.5em;
+	overflow: hidden;
 }
 
 #servicos .parg-blk{
@@ -180,7 +187,7 @@ h1 {
 #servicos ol li {
 	font-family: "proxima-nova", sans-serif;
 	font-style: normal;
-	font-weight: 900;
+	font-weight: 900; /*black*/
 	color: rgb(218, 47, 40);
 	font-size: 1.2em;
 	list-style-type: none;
@@ -189,7 +196,7 @@ h1 {
 
 #servicos ol li a {
 	color: rgb(218, 47, 40);
-	font-weight: 800;
+	font-weight: 800; /*ExtraBold*/
 }
 
 #servicos-responsivo {
@@ -205,8 +212,11 @@ h1 {
 #servicos-responsivo .lista li {
 	font-family: "proxima-nova", sans-serif;
 	font-style: normal;
-	font-weight: 600; /*medium*/
-	margin-bottom: .5em;
+	font-weight: 500; /*medium*/
+	font-size: 0.94em;
+	line-height: 2.3em;
+	letter-spacing: 0.05em;
+	margin-bottom: 0.5em;
 	overflow: hidden;
 
 }
@@ -216,16 +226,16 @@ h1 {
 	counter-increment: awesome-counter;
 	font-family: "proxima-nova", sans-serif;
 	font-style: normal;
-	font-weight: 900;
-	font-size: 2.5em;
-	margin-right: .5em;
-	display: inline-block;
-	color: rgb(218, 47, 40);
+	font-weight: 900; /*black*/
+	color: rgb(220, 49, 40);
+	font-size: 3.13em;
+	letter-spacing: 0;
+	margin-right: 0.5em;
+	display: block;
+
 }
 
 #servicos-responsivo .parg-blk{
-	/*font-family: "proxima-nova", sans-serif;
-	font-style: normal;*/
 	font-weight: 900; /*black*/
 }
 
@@ -242,18 +252,18 @@ h1 {
 }
 
 #servicos-responsivo ol li {
-	font-family: "proxima-nova", sans-serif;
-	font-style: normal;
-	font-weight: 900;
-	color: rgb(218, 47, 40);
-	font-size: 1.2em;
 	list-style-type: none;
 }
 
-
 #servicos-responsivo ol li a {
+	font-family: "proxima-nova", sans-serif;
+	font-style: normal;
+	font-weight: 900; /*black*/
 	color: rgb(218, 47, 40);
-	font-weight: 800;
+	text-decoration: underline;
+	font-size: 0.94em;
+	line-height: 1.07em;
+	letter-spacing: 0.05em;
 }
 
 #contato ul {
@@ -275,7 +285,7 @@ h1 {
 #links a{
 	font-family: "proxima-nova", sans-serif;
 	font-style: normal;
-	font-weight: 900;
+	font-weight: 900; /*black*/
 	font-size: 1.5em;
 	color: #000;
 	text-decoration: none;
@@ -325,7 +335,7 @@ h1 {
 #midias a p {
 	font-family: "proxima-nova", sans-serif;
 	font-style: normal;
-	font-weight: 900;
+	font-weight: 900; /*black*/
 	font-size: 1.5em;
 	color: #000;
 	text-decoration: underline;
@@ -337,7 +347,7 @@ h1 {
 #midias p {
 	font-family: "proxima-nova", sans-serif;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 500; /*medium*/
 	font-size: 1.13em;
 	color: rgb(218, 47, 40);
 	font-style: normal;
@@ -348,7 +358,7 @@ h1 {
 #contribua h2{
 	font-family: "proxima-nova", "proxima-nova-extra-condensed", sans-serif;
 	font-style: normal;
-	font-weight: 900;
+	font-weight: 900; /*black*/
 	font-size: 1.25em, 1.5em;
 	color: rgb(218, 47, 40);
 	text-align: left;
@@ -358,9 +368,9 @@ h1 {
 #contribua p {
 	font-family: "proxima-nova", sans-serif;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 500; /*medium*/
 	font-size: 1.25em;
-	color: rgb(0, 0, 0);
+	color: #000;
 	text-align: left;
 	line-height: 1.07em;
 	letter-spacing: 0em;
@@ -368,10 +378,9 @@ h1 {
 #contribua p span {
 	font-family: "proxima-nova-extra-condensed", sans-serif;
 	font-style: normal;
-	font-weight: 900;
+	font-weight: 900; /*black*/
 	font-size:1.25em;
-	color: rgb(0, 0, 0)
-	font-style: normal;
+	color: #000;
 	text-align: left;
 	line-height: 1.07em;
 	letter-spacing: 0em;
@@ -380,13 +389,16 @@ h1 {
 #contato ul li {
 	font-family: "proxima-nova", sans-serif;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 500; /*medium*/
 	font-size: 2em;
 	color: rgb(218, 47, 40);
 	font-style: normal;
 	line-height: 1.2em;
 	letter-spacing: 0em;
 }
+#contato p {
+			font-weight: 900; /*black*/
+	}
 @media (max-width: 1000px){
 	body {
 		background-size: cover;
@@ -399,11 +411,6 @@ h1 {
 		margin-top:20%;
 	}
 	#links div {
-		/*display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
-		margin: 2% 0;
-		min-height: 40%;*/
 		flex-direction: column;
 		align-items: stretch;
 	}
@@ -425,7 +432,6 @@ h1 {
 	main section:first-child{
 		display: block;
 		padding: 0;
-		/*margin: 0;*/
 		margin-top: 20%;
 		margin-left: 20%;
 	}
@@ -435,20 +441,16 @@ h1 {
 	main section {
 		width: 83%;
 		min-height: auto;
-	/*	margin: 0;
-		padding: 0;*/
 		margin-top: 15%;
 	}
 	main section:nth-child(2){
 		margin-top: 5%;
 	}
-
-	/*main section h1 {
-		margin-top: 70%;
-	}*/
+	
 	#servicos {
 		display: none;
 	}
+
 	#servicos-responsivo {
 		display: block;		
 	}
@@ -458,11 +460,13 @@ h1 {
 	#servicos-responsivo div:frist-child{
 		margin-top: 0%;
 	}
+
 	#links div {
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 5%;
 	} 
+
 	#links .img-links {
 		align-self: flex-start;
 		margin-left: 30%;
@@ -495,4 +499,51 @@ h1 {
 		background-repeat: no-repeat;
 		background-position: right top;
 	}
+	
+	h1 {
+		color: rgb(5, 7, 8);
+		font-size: 1.88em;
+	}	
+
+	section p {
+		font-size: 0.94em;
+		color: rgb(5, 7, 8);
+		text-align: left;
+	}
+	#links a{
+		font-size: 0.94em;
+		color: rgb(5, 7, 8);
+		line-height: 1.07em;
+	}
+	#midias a p {
+		font-size: 1.13em;
+		color: rgb(5, 7, 8);
+		line-height: 1.16em;
+	}
+
+	#midias p {
+		font-size: 0.94em;
+		color: rgb(220, 49, 40);
+		line-height: 1.16em;
+
+	}
+	#contribua h2{
+		font-size: 1.5em;
+		color: rgb(220, 49, 40);
+	}
+	#contribua p {
+		color: rgb(5, 7, 8);
+	} 
+
+	#contribua p span {
+		color: rgb(5, 7, 8)
+		font-style: normal;
+	}
+	#contato p,
+	#contato ul li {
+		font-size: 1.63em;
+		color: rgb(220, 49, 40);
+		line-height: 1.16em;
+	}
+
 }
